@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hBK-bb-7vk">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -155,76 +156,46 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="458"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="9nf-Mq-9nS" userLabel="wedding1View">
-                                        <rect key="frame" x="3" y="83" width="155" height="155"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding1" id="H4B-9H-Sno">
+                                        <rect key="frame" x="4" y="83" width="155" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding1" id="H4B-9H-Sno">
-                                                <rect key="frame" x="-3" y="-64" width="160" height="240"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="lDu-NI-jee" appends="YES" id="cay-Ly-MGt"/>
-                                                </connections>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="Fsa-on-NuI" userLabel="wedding2View">
-                                        <rect key="frame" x="4" y="242" width="155" height="155"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="lDu-NI-jee" appends="YES" id="cay-Ly-MGt"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="2yS-SN-EbH">
+                                        <rect key="frame" x="162" y="187" width="156" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding2" id="ji2-wz-DvT">
-                                                <rect key="frame" x="-32" y="-42" width="233" height="240"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="c88-xl-uaw" appends="YES" id="35q-dG-c5z"/>
-                                                </connections>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="Q3z-9e-MWH" userLabel="wedding3View">
-                                        <rect key="frame" x="162" y="83" width="154" height="102"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="lBX-oZ-7Ss" appends="YES" id="Vy7-LW-IdW"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="mtq-fM-ked">
+                                        <rect key="frame" x="162" y="83" width="156" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="mtq-fM-ked">
-                                                <rect key="frame" x="-8" y="0.0" width="166" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="VHj-by-tcD" appends="YES" id="MVL-08-fBd"/>
-                                                </connections>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="RqJ-07-CCn" userLabel="wedding4View">
-                                        <rect key="frame" x="162" y="187" width="154" height="102"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="VHj-by-tcD" appends="YES" id="MVL-08-fBd"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding5" id="R4w-Va-t17">
+                                        <rect key="frame" x="162" y="276" width="156" height="139"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="2yS-SN-EbH">
-                                                <rect key="frame" x="-36" y="-13" width="194" height="129"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="lBX-oZ-7Ss" appends="YES" id="Vy7-LW-IdW"/>
-                                                </connections>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="GS1-cL-hbs" userLabel="wedding5View">
-                                        <rect key="frame" x="162" y="293" width="154" height="102"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="aqy-Tb-vRf" appends="YES" id="RtA-gm-CQ7"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding2" id="ji2-wz-DvT">
+                                        <rect key="frame" x="4" y="240" width="155" height="157"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding5" id="R4w-Va-t17">
-                                                <rect key="frame" x="-20" y="-13" width="194" height="129"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="aqy-Tb-vRf" appends="YES" id="RtA-gm-CQ7"/>
-                                                </connections>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="c88-xl-uaw" appends="YES" id="35q-dG-c5z"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>

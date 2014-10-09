@@ -120,22 +120,25 @@ class NewsFeedViewController: UIViewController, UIViewControllerTransitioningDel
             var window = UIApplication.sharedApplication().keyWindow
             var frame = window.convertRect(imageViewToPass.frame, fromView: scrollView)
             var imageCopy = UIImageView()
-
+            
             imageCopy.frame = window.convertRect(imageViewToPass.frame, fromView: scrollView)
             imageCopy.image = imageViewToPass.image
-            imageCopy.contentMode = UIViewContentMode.ScaleAspectFit
             imageCopy.clipsToBounds = true
+            imageCopy.contentMode = imageViewToPass.contentMode
+            println("frame is : \(imageCopy.frame)")
             
             var scaleFactor = CGFloat()
             let scaleWidth = window.frame.width / imageCopy.frame.width
             let scaleHeight = destinationImageHeight / imageCopy.frame.height
             let minScale = min(scaleWidth, scaleHeight)
             let maxScale = max(scaleWidth, scaleHeight)
-            if (imageCopy.image!.size.height > imageViewToPass.image!.size.width) {
+            
+            if (imageCopy.image!.size.height > imageCopy.image!.size.width) {
                 scaleFactor = scaleHeight
             } else {
                 scaleFactor = minScale
             }
+
             
             toViewController.view.alpha = 0
             
@@ -147,8 +150,11 @@ class NewsFeedViewController: UIViewController, UIViewControllerTransitioningDel
             containerView.addSubview(toViewController.view)
             toViewController.view.alpha = 0
             UIView.animateWithDuration(0.4, animations: { () -> Void in
-                imageCopy.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor)
-                imageCopy.center = destinationImageCenter
+                //imageCopy.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor)
+                var photoViewController = toViewController as PhotoViewController
+                
+                imageCopy.frame = photoViewController.photoImage.frame
+                
                 toViewController.view.alpha = 1
                 }) { (finished: Bool) -> Void in
                     transitionContext.completeTransition(true)
