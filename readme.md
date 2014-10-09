@@ -15,7 +15,7 @@ Lost track. Definitely over 10.
 ###Notes
 I had the photos animating from the correct origin at one point, but I changed something and it stopped working. And, welp, I'm out of time. Yes, I'm coming to office hours. Feeling really lost still. So lost that I'm not sure what questions to ask...
 
-**Update: I had nested my images in views. This was causing my coordinates to be off when calling the frame. Removed these views and so they're animating from the correct orgin. Yay! Updated gif below.
+**Update: I had nested my images in views. This was causing my coordinates to be off when calling the frame. Removed these views and so they're animating from the correct origin. Yay! Updated gif below.
 
 
 ###Walkthrough of all user stories
